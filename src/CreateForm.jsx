@@ -71,7 +71,7 @@ const CreateForm = () => {
       .trim()
       .replace(/\s+/g, "-");
 
-    axios.post("http://localhost:5000/create-form", {
+    axios.post("https://asignment2.onrender.com/create-form", {
         formName,
         formId: formSlug,
         colorPallet,
