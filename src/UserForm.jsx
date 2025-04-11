@@ -10,7 +10,7 @@ const UserForm = () => {
 
   function findForm() {
     axios
-      .post("http://localhost:5000/get-form" + pathname)
+      .post("https://asignment2.onrender.com/get-form" + pathname)
       .then((success) => {
         setFormSchemaData(success.data);
       })
