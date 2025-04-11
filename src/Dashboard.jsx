@@ -8,7 +8,7 @@ const Dashboard = () => {
 
   function getAllForm() {
     axios
-      .get("http://localhost:5000/get-forms")
+      .get("https://asignment2.onrender.com/get-forms")
       .then((success) => {
         if (success.data.status === 1) {
           setFormsData(success.data.allForms);
@@ -23,7 +23,7 @@ const Dashboard = () => {
 
   const handleDelete = async (formId) => {
     try {
-      await axios.delete(`http://localhost:5000/delete-form/${formId}`);
+      await axios.delete(`https://asignment2.onrender.com/delete-form/${formId}`);
       getAllForm();
     } catch (error) {
       console.log("Delete error:", error.message);
